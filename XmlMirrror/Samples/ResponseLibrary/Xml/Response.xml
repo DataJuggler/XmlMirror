@@ -1,0 +1,9 @@
+﻿<ResponseDoc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <response>
+    <entitylineNumber>1</entitylineNumber>
+    <statusCode>Success</statusCode>
+    <entityUid>0BA0C06E9CBAA3D890D025A37A577DDB074BA9A9</entityUid>
+    <entityMark>1000000115468</entityMark>
+  </response>
+</ResponseDoc>
+
