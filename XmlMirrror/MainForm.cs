@@ -1181,7 +1181,7 @@ namespace XmlMirror
                         string pluralName = PluralWordHelper.GetPluralName(className, true);
                         regionText = "class " + this.selectedMirror.ClassName.Replace(".cs", "") + " : ParserBaseClass";
                         string lineText = TextHelper.CombineStrings("namespace ", this.SelectedMirror.Namespace);
-                        usingStatements = CreateUsingStatements(targetNamespace);
+                        usingStatements = CreateUsingStatements(targetNamespace, true);
                         if (this.SelectedMirror.HasOutputFolderPath && this.SelectedMirror.HasFieldLinks)
                         {
                             ProjectFileManager fileManager = new ProjectFileManager();
@@ -1399,7 +1399,7 @@ namespace XmlMirror
                             classDescription = classDescription.Replace("[CLASSNAME]", className);
                             regionText = "class " + writerName;
                             string lineText = TextHelper.CombineStrings("namespace ", this.SelectedMirror.Namespace);
-                            usingStatements = this.CreateUsingStatements(targetNamespace);
+                            usingStatements = this.CreateUsingStatements(targetNamespace, false);
                             if (this.SelectedMirror.HasOutputFolderPath && this.SelectedMirror.HasFieldLinks)
                             {
                                 // Create the fileManager and the two writers
@@ -1853,11 +1853,11 @@ namespace XmlMirror
             }
             #endregion
             
-            #region CreateUsingStatements(string targetNamespace)
+            #region CreateUsingStatements(string targetNamespace, bool isParser)
             /// <summary>
             /// This method returns the Using Statements
             /// </summary>
-            private List<Reference> CreateUsingStatements(string targetNamespace)
+            private List<Reference> CreateUsingStatements(string targetNamespace, bool isParser)
             {
                 // locals
                 List<Reference> usingStatements = new List<Reference>();
@@ -1877,18 +1877,22 @@ namespace XmlMirror
                 usingStatements.Add(ultimateHelperReference);
                 usingStatements.Add(systemReference);
                 usingStatements.Add(genericCollectionsReference);
-                
-                // only add the reference to XmlMirror.Runtime.Objects if 
-                // the targetNamespace is not XmlMirror.Runtime.Objects
-                // (this is needed so XmlMirror can work on itself without removing the refernence manually)
-                if (!TextHelper.IsEqual(targetNamespace, xmlMirrorRuntimeObjectsReference.ReferenceName))
+
+                // if this is a parser
+                if (isParser)
                 {
-                    // Add the xmlMirrorRuntimeObjectsReference
-                    usingStatements.Add(xmlMirrorRuntimeObjectsReference);
-                }
+                    // only add the reference to XmlMirror.Runtime.Objects if 
+                    // the targetNamespace is not XmlMirror.Runtime.Objects
+                    // (this is needed so XmlMirror can work on itself without removing the refernence manually)
+                    if (!TextHelper.IsEqual(targetNamespace, xmlMirrorRuntimeObjectsReference.ReferenceName))
+                    {
+                        // Add the xmlMirrorRuntimeObjectsReference
+                        usingStatements.Add(xmlMirrorRuntimeObjectsReference);
+                    }
                 
-                // Add the last reference
-                usingStatements.Add(xmlMirrorRuntimeUtilreference);
+                    // Add the last reference
+                    usingStatements.Add(xmlMirrorRuntimeUtilreference);
+                }
                 
 
                 // if we are building a writer
