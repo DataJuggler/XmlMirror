@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("XmlMirror")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("6.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("6.0.3")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("6.0.4.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("6.0.4")]
 [assembly: System.Reflection.AssemblyProductAttribute("XmlMirror")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XmlMirror")]
-[assembly: System.Reflection.AssemblyVersionAttribute("6.0.3.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("6.0.4.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

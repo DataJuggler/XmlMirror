@@ -141,6 +141,7 @@ namespace XmlMirror
             this.YouTubeButtonContainer = new DataJuggler.Win.Controls.Objects.PanelExtender();
             this.YouTubeButton = new System.Windows.Forms.PictureBox();
             this.BottomMarginPanel = new DataJuggler.Win.Controls.Objects.PanelExtender();
+            this.WriterInfoImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.F1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.F2Image)).BeginInit();
             this.ContextMenu.SuspendLayout();
@@ -148,6 +149,7 @@ namespace XmlMirror
             this.RightPanel.SuspendLayout();
             this.YouTubeButtonContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.YouTubeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WriterInfoImage)).BeginInit();
             this.SuspendLayout();
             // 
             // BrowseButton
@@ -875,6 +877,17 @@ namespace XmlMirror
             this.BottomMarginPanel.Size = new System.Drawing.Size(178, 16);
             this.BottomMarginPanel.TabIndex = 92;
             // 
+            // WriterInfoImage
+            // 
+            this.WriterInfoImage.BackgroundImage = global::XmlMirror.Properties.Resources.Writer_Mode;
+            this.WriterInfoImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.WriterInfoImage.Location = new System.Drawing.Point(43, 32);
+            this.WriterInfoImage.Name = "WriterInfoImage";
+            this.WriterInfoImage.Size = new System.Drawing.Size(806, 272);
+            this.WriterInfoImage.TabIndex = 93;
+            this.WriterInfoImage.TabStop = false;
+            this.WriterInfoImage.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -882,6 +895,7 @@ namespace XmlMirror
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1064, 721);
             this.ContextMenuStrip = this.ContextMenu;
+            this.Controls.Add(this.WriterInfoImage);
             this.Controls.Add(this.RightPanel);
             this.Controls.Add(this.RightMarginPanel);
             this.Controls.Add(this.HiddenButton);
@@ -932,14 +946,16 @@ namespace XmlMirror
             this.RightPanel.ResumeLayout(false);
             this.YouTubeButtonContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.YouTubeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WriterInfoImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
             }
-            #endregion
-            
         #endregion
-        
+
+        #endregion
+
+        private PictureBox WriterInfoImage;
     }
     #endregion
 

@@ -570,7 +570,7 @@ namespace XmlMirror
                         string className = selectedClassName.Substring(index).Replace(".", "");
                         
                         // Get the plural name of this class
-                        string pluralClassName = PluralWordHelper.GetPlural(className, TextCaseOptionsEnum.Lower_Case_First_Char);
+                        string pluralClassName = PluralWordHelper.GetPlural(className, TextCaseOptionsEnum.Upper_Case_First_Char);
 
                         // if we are creating a parser
                         if (this.OutputType == OutputTypeEnum.Parser)
@@ -1430,10 +1430,10 @@ namespace XmlMirror
                                 writer.Indent++;
                                 
                                 // Write out the code to export a collection
-                                this.WriteExportListMethod(writer, className, writerName);
+                                WriteExportListMethod(writer, className, writerName);
                                
                                 // Write the ExportObjectMethod
-                                this.WriteExportObjectMethod(writer, className);
+                                WriteExportObjectMethod(writer, className);
                                 
                                 // Decrease Indent
                                 writer.Indent--;
@@ -1868,7 +1868,7 @@ namespace XmlMirror
                 
                 // create each references
                 Reference targetReference = new Reference(targetNamespace, referenceNumber++);
-                Reference ultimateHelperReference = new Reference("DataJuggler.Core.UltimateHelper", referenceNumber++);
+                Reference ultimateHelperReference = new Reference("DataJuggler.UltimateHelper", referenceNumber++);
                 Reference systemReference = new Reference("System", referenceNumber++);
                 Reference genericCollectionsReference = new Reference("System.Collections.Generic", referenceNumber++);
                 Reference xmlMirrorRuntimeObjectsReference = new Reference("XmlMirror.Runtime.Objects", referenceNumber++);
@@ -3158,17 +3158,18 @@ namespace XmlMirror
                 bool show = (this.OutputType == OutputTypeEnum.Parser);
 
                 // Show or hide any controls
-                this.SourceXmlFileTextBox.Visible = show;
-                this.StartButton.Visible = show;
-                this.XmlTreeView.Visible = show;
-                this.F2Image.Visible = show;
-                this.F2Label.Visible = show;
-                this.F2DetailLabel.Visible = show;
-                this.F1Image.Visible = show;
-                this.F1Label.Visible = show;
-                this.F1DetailLabel.Visible = show;
-                this.CollectionInfoLabel.Visible = show;
-                this.BrowseButton.Visible = show;
+                SourceXmlFileTextBox.Visible = show;
+                StartButton.Visible = show;
+                XmlTreeView.Visible = show;
+                F2Image.Visible = show;
+                F2Label.Visible = show;
+                F2DetailLabel.Visible = show;
+                F1Image.Visible = show;
+                F1Label.Visible = show;
+                F1DetailLabel.Visible = show;
+                CollectionInfoLabel.Visible = show;
+                BrowseButton.Visible = show;
+                WriterInfoImage.Visible = !show;
 
                 // if the OutputType is Parser and there are one or moe Fields and the NewObjectNodeName is set and the NewFieldName is set and the TargetTreeView has nodes and the XmlTreeView has nodes
                 if ((show) && (ListHelper.HasOneOrMoreItems(Fields)) && (HasNewObjectNodeName) && (HasNewFieldName) && (TargetTreeView.Nodes.Count > 0) && (XmlTreeView.Nodes.Count > 0))
@@ -3305,7 +3306,7 @@ namespace XmlMirror
                 string instanceName = CSharpClassWriter.CapitalizeFirstCharEx(className, true);
                 string regionDeclarationLine = "ExportList(List<" + className + "> " + variableName + ", int indent = 0)";
                 string methodSummary = "This method is used to export a list of '" + className + "' objects to xml";
-                string methodDeclarationLine = "public string ExportList" + "(List<" + className + "> " + variableName + ", int indent = 0)";
+                string methodDeclarationLine = "public static string ExportList" + "(List<" + className + "> " + variableName + ", int indent = 0)";
                 string ifHasOneOrMoreItems = "if ((" + variableName + " != null) && (" + variableName + ".Count > 0))";
                 string stringBuilderComment = "Create a new instance of a StringBuilder object";
                 string createStringBuilder = "StringBuilder sb = new StringBuilder();";
@@ -3441,12 +3442,6 @@ namespace XmlMirror
                 // verify the writer and the className both exist
                 if ((NullHelper.Exists(writer)) && (TextHelper.Exists(className)))
                 {
-                    // Update 1.1.2017: The fields should already be loaded or the button would not be enabled
-                    //                          This had to be commented out so the skipped fields are not lost
-
-                    // Get the fields
-                    // this.Fields = GetFields();
-
                     // Get the variableName
                     string variableName = CSharpClassWriter.CapitalizeFirstCharEx(className, true);
                     string xmlVariableName = variableName + "Xml";
@@ -3457,7 +3452,7 @@ namespace XmlMirror
                     string regionName = "Export" + className + "(" + className + " " + variableName + ", int indent = 0)";
 
                     // set the methodDeclaration
-                    string methodDeclaration = "public string " + regionName;
+                    string methodDeclaration = "public static string " + regionName;
 
                     // Write the region
                     writer.BeginRegion(regionName);

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "XmlMirror/6.0.3": {
+      "XmlMirror/6.0.4": {
         "dependencies": {
           "DataJuggler.Net6": "6.0.4",
           "DataJuggler.Win.Controls": "6.1.4",
@@ -1005,7 +1005,7 @@
     }
   },
   "libraries": {
-    "XmlMirror/6.0.3": {
+    "XmlMirror/6.0.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

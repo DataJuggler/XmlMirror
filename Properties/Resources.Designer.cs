@@ -93,6 +93,16 @@ namespace XmlMirror.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Writer_Mode {
+            get {
+                object obj = ResourceManager.GetObject("Writer Mode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Xml_Mirror_plus_Xml_Text {
             get {
                 object obj = ResourceManager.GetObject("Xml Mirror plus Xml Text", resourceCulture);
