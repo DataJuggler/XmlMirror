@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlMirror", "XmlMirror.csproj", "{229E72FF-E03B-430E-B55D-88C7D087DDED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlMirror.Runtime6", "XmlMirror.Runtime6.csproj", "{A26CD44C-6874-457E-9F4F-4F9B579E1F90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{229E72FF-E03B-430E-B55D-88C7D087DDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{229E72FF-E03B-430E-B55D-88C7D087DDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{229E72FF-E03B-430E-B55D-88C7D087DDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{229E72FF-E03B-430E-B55D-88C7D087DDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26CD44C-6874-457E-9F4F-4F9B579E1F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26CD44C-6874-457E-9F4F-4F9B579E1F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26CD44C-6874-457E-9F4F-4F9B579E1F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26CD44C-6874-457E-9F4F-4F9B579E1F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4E9588E6-0E8B-481A-98F4-CC97463D3A07}
+		SolutionGuid = {251293D9-C539-4EA2-81DF-7EA61C8CAA54}
 	EndGlobalSection
 EndGlobal
