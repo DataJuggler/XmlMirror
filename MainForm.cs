@@ -3210,14 +3210,14 @@ namespace XmlMirror
                 {
                     // Show the enabled image
                     BuildButton.Enabled = true;
-                    BuildButton.BackgroundImage = null; // Properties.Resources.DarkBlueButton;
+                    BuildButton.BackgroundImage = Properties.Resources.DarkBlueButton;
                     BuildButton.ForeColor = Color.White;
                 }
                 else
                 {
                     // Show the disabled image
                     BuildButton.Enabled = false;
-                    BuildButton.BackgroundImage = null; // Properties.Resources.DarkButton;
+                    BuildButton.BackgroundImage = Properties.Resources.DarkButton;
                     BuildButton.ForeColor = Color.DarkGray;
                 }
             }
