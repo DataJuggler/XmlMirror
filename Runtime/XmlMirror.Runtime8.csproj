@@ -20,6 +20,7 @@ From now on, only this version will be updated.</PackageReleaseNotes>
     <ApplicationIcon>XML Icon.ico</ApplicationIcon>
     <Nullable>disable</Nullable>
     <PackageTags>C#;XML;</PackageTags>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -43,6 +44,13 @@ From now on, only this version will be updated.</PackageReleaseNotes>
 
   <ItemGroup>
     <Folder Include="Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
