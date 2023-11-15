@@ -9,7 +9,7 @@ using System.Text;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Objects
+namespace XmlMirror.Runtime7.Objects
 {
 
     #region class FieldMap

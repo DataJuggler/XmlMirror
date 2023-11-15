@@ -6,15 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using XmlMirror.Runtime6.Objects;
+using XmlMirror.Runtime7.Objects;
 using System.IO;
 using System.Xml.Linq;
-using XmlMirror.Runtime6.Enumerations;
+using XmlMirror.Runtime7.Enumerations;
 using DataJuggler.UltimateHelper;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Util
+namespace XmlMirror.Runtime7.Util
 {
 
     #region class XmlParser
@@ -164,9 +164,6 @@ namespace XmlMirror.Runtime6.Util
                 {
                     // set the error
                     this.Error = error;
-
-                    // raise the error
-                    throw error;
                 }
             }
             #endregion

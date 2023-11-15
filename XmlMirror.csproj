@@ -2,12 +2,20 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Runtime\XML Icon.ico</ApplicationIcon>
-    <Version>6.0.4</Version>
+    <Version>7.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;IDE0090;IDE0017;IDE0059;</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;IDE0090;IDE0017;IDE0059;</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,8 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.Net6" Version="6.0.4" />
-    <PackageReference Include="DataJuggler.Win.Controls" Version="6.1.4" />
+    <PackageReference Include="DataJuggler.Net7" Version="7.0.2" />
+    <PackageReference Include="DataJuggler.Win.Controls" Version="7.1.1" />
     <PackageReference Include="PluralizeService.Core" Version="1.2.21147.2" />
     <PackageReference Include="XmlMirror.Runtime6" Version="6.0.3" />
   </ItemGroup>

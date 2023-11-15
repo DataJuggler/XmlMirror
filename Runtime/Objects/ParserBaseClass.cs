@@ -2,12 +2,12 @@
 
 #region using statements
 
-using XmlMirror.Runtime6.Util;
+using XmlMirror.Runtime7.Util;
 using DataJuggler.UltimateHelper;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Objects
+namespace XmlMirror.Runtime7.Objects
 {
 
     #region class ParserBaseClass

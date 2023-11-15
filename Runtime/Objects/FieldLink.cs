@@ -3,11 +3,11 @@
 #region using statements
 
 using System;
-using XmlMirror.Runtime6.Enumerations;
+using XmlMirror.Runtime7.Enumerations;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Objects
+namespace XmlMirror.Runtime7.Objects
 {
 
     #region class FieldLink

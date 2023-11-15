@@ -3,7 +3,7 @@
 #region using statements
 
 using DataJuggler.UltimateHelper;
-using DataJuggler.Net6;
+using DataJuggler.Net7;
 using DataJuggler.Win.Controls.Interfaces;
 using DataJuggler.Win.Controls.Objects;
 using Microsoft.Win32;

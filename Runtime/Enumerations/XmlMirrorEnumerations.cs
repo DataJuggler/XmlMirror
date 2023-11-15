@@ -9,7 +9,7 @@ using System.Text;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Enumerations
+namespace XmlMirror.Runtime7.Enumerations
 {
 
     #region DataTypeEnum

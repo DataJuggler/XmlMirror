@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using XmlMirror.Runtime6.Objects;
-using DataJuggler.Net6;
+using DataJuggler.Net7;
 
 #endregion
 

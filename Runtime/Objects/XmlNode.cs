@@ -6,13 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using XmlMirror.Runtime6.Util;
-using XmlMirror.Runtime6.Enumerations;
+using XmlMirror.Runtime7.Util;
+using XmlMirror.Runtime7.Enumerations;
 using DataJuggler.UltimateHelper;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Objects
+namespace XmlMirror.Runtime7.Objects
 {
 
     #region class XmlNode

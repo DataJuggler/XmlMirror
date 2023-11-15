@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Reflection;
-using XmlMirror.Runtime6.Enumerations;
-using XmlMirror.Runtime6.Objects;
+using XmlMirror.Runtime7.Enumerations;
+using XmlMirror.Runtime7.Objects;
 
 #endregion
 
-namespace XmlMirror.Runtime6.Util
+namespace XmlMirror.Runtime7.Util
 {
 
     #region class ReflectionHelper
