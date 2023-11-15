@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 #endregion
 
-namespace XmlMirror.Runtime7.Util
+namespace XmlMirror.Runtime8.Util
 {
 
     #region class XMLReserveWordHelper

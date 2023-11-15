@@ -9,7 +9,7 @@ using System.Text;
 
 #endregion
 
-namespace XmlMirror.Runtime7.Objects
+namespace XmlMirror.Runtime8.Objects
 {
 
     #region class ParserMap

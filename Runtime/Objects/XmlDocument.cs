@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using XmlMirror.Runtime7.Enumerations;
+using XmlMirror.Runtime8.Enumerations;
 
 #endregion
 
-namespace XmlMirror.Runtime7.Objects
+namespace XmlMirror.Runtime8.Objects
 {
 
     #region class XmlDocument

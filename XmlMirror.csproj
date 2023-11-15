@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -29,10 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.Net7" Version="7.0.2" />
+    <PackageReference Include="DataJuggler.Net8" Version="8.0.0" />
     <PackageReference Include="DataJuggler.Win.Controls" Version="7.1.1" />
     <PackageReference Include="PluralizeService.Core" Version="1.2.21147.2" />
-    <PackageReference Include="XmlMirror.Runtime6" Version="6.0.3" />
   </ItemGroup>
 
   <ItemGroup>
