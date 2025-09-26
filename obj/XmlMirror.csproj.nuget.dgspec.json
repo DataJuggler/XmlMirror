@@ -24,18 +24,16 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows7.0"
+          "net9.0-windows7.0"
         ],
         "sources": {
-          "C:\\LocalNuGet": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows7.0",
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -43,19 +41,25 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows7.0",
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows7.0",
           "dependencies": {
-            "DataJuggler.Net8": {
+            "DataJuggler.Net9": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.5, )"
             },
             "DataJuggler.Win.Controls": {
               "target": "Package",
-              "version": "[7.1.1, )"
+              "version": "[9.1.16, )"
             },
             "PluralizeService.Core": {
               "target": "Package",
@@ -81,7 +85,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
