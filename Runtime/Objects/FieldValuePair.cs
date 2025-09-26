@@ -5,11 +5,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using XmlMirror.Runtime8.Enumerations;
+using XmlMirror.Runtime9.Enumerations;
 
 #endregion
 
-namespace XmlMirror.Runtime8.Objects
+namespace XmlMirror.Runtime9.Objects
 {
 
     #region class FieldValuePair

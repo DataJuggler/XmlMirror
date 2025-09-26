@@ -18,7 +18,7 @@ using XmlMirror.Runtime9;
 using XmlMirror.Runtime9.Objects;
 using XmlMirror.Runtime9.Enumerations;
 using XmlMirror.Enumerations;
-using XmlMirror.Runtime9.Util;
+using XmlMirror..Util;
 using XmlMirror.Objects;
 using XmlMirror.Xml.Writers;
 using XmlMirror.Xml.Parsers;

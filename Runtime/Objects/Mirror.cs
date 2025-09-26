@@ -5,12 +5,12 @@
 using System;
 using System.Linq;
 using System.Text;
-using XmlMirror.Runtime8.Enumerations;
+using XmlMirror.Runtime9.Enumerations;
 using System.Collections.Generic;
 
 #endregion
 
-namespace XmlMirror.Runtime8.Objects
+namespace XmlMirror.Runtime9.Objects
 {
 
     #region class Mirror

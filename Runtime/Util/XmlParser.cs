@@ -6,15 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using XmlMirror.Runtime8.Objects;
+using XmlMirror.Runtime9.Objects;
 using System.IO;
 using System.Xml.Linq;
-using XmlMirror.Runtime8.Enumerations;
+using XmlMirror.Runtime9.Enumerations;
 using DataJuggler.UltimateHelper;
 
 #endregion
 
-namespace XmlMirror.Runtime8.Util
+namespace XmlMirror.Runtime9.Util
 {
 
     #region class XmlParser

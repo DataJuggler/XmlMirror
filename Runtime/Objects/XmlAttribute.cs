@@ -9,7 +9,7 @@ using System.Text;
 
 #endregion
 
-namespace XmlMirror.Runtime8.Objects
+namespace XmlMirror.Runtime9.Objects
 {
 
     #region class XmlAttribute

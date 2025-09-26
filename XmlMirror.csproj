@@ -32,6 +32,7 @@
     <PackageReference Include="DataJuggler.Net9" Version="9.0.5" />
     <PackageReference Include="DataJuggler.Win.Controls" Version="9.1.16" />
     <PackageReference Include="PluralizeService.Core" Version="1.2.21147.2" />
+    <PackageReference Include="XmlMirror.Runtime9" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
