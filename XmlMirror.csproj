@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;IDE0090;IDE0017;IDE0059;</NoWarn>
+    <NoWarn>1701;1702;IDE0090;IDE0017;IDE0059;WFO1000;</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>1701;1702;IDE0090;IDE0017;IDE0059;</NoWarn>
+    <NoWarn>1701;1702;IDE0090;IDE0017;IDE0059;WFO1000;</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,7 +32,7 @@
     <PackageReference Include="DataJuggler.Net9" Version="9.0.5" />
     <PackageReference Include="DataJuggler.Win.Controls" Version="9.1.16" />
     <PackageReference Include="PluralizeService.Core" Version="1.2.21147.2" />
-    <PackageReference Include="XmlMirror.Runtime9" Version="9.0.0" />
+    <PackageReference Include="XmlMirror.Runtime9" Version="9.0.1" />
   </ItemGroup>
 
   <ItemGroup>

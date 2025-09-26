@@ -3,7 +3,7 @@
 #region using statements
 
 using DataJuggler.UltimateHelper;
-using DataJuggler.Net7;
+using DataJuggler.NET9;
 using DataJuggler.Win.Controls.Interfaces;
 using DataJuggler.Win.Controls.Objects;
 using Microsoft.Win32;
@@ -18,7 +18,7 @@ using XmlMirror.Runtime9;
 using XmlMirror.Runtime9.Objects;
 using XmlMirror.Runtime9.Enumerations;
 using XmlMirror.Enumerations;
-using XmlMirror..Util;
+using XmlMirror.Runtime9.Util;
 using XmlMirror.Objects;
 using XmlMirror.Xml.Writers;
 using XmlMirror.Xml.Parsers;

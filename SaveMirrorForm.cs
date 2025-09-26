@@ -7,7 +7,7 @@ using DataJuggler.Win.Controls.Interfaces;
 using System;
 using System.IO;
 using System.Windows.Forms;
-using XmlMirror.Runtime6.Objects;
+using XmlMirror.Runtime9.Objects;
 using XmlMirror.Xml.Writers;
 
 #endregion
